@@ -1,0 +1,25 @@
+.CovidData {
+        max-width: 580px;
+        margin-left: 30%;
+        background-color: black;
+        margin-top: 0%;
+    }
+    .CovidData1 {
+            max-width: 580px;
+            margin-left: 30%;
+            background-color: black;
+            margin-top: 10%;
+        }
+h1 {
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+a {
+    margin-top: 3%;
+    margin-left: 40%;
+
+}

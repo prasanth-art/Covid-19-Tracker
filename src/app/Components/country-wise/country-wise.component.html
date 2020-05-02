@@ -1,0 +1,57 @@
+<body>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+        </head>
+
+
+    <h1 class="heading1 col-sm-12">
+       Country :</h1>
+       <div class="col-sm-12">
+    <input type="text" id="exampleForm2" name="country"  [(ngModel)]=country class="form-control input-sm cases2"> 
+       </div>
+       <!-- <div *ngIf="!country.valid&& country.touched" class="alert alert-danger">
+           </div> -->
+           <div class="col-sm-12">
+       <button mat-raised-button color="primary" (click)="submit()" [disabled]="!country">Get Data </button>
+           </div>
+       <div class="spin">
+        <mat-spinner *ngIf="showspinner"></mat-spinner>
+    </div>
+    <div class="errormsg">
+        <mat-card *ngIf="errormsg">
+            <p style="text-align: center; color: red; font-size: x-large;
+            font-weight: bold;">No data found</p>
+         </mat-card>
+    </div>
+        <div *ngIf="countryview">
+       
+         <div class="container col-md-12">
+             <table class="table table-striped table-bordered table-dark">
+                <thead class="cases1">
+                    <tr>
+                    <th>Country</th>
+                    <th>Province</th>
+                    <th>Confirmed</th>
+                    <th>Deaths</th>
+                    <th>Recovered</th>
+                    <th>City</th>
+                    <th>Last Updated</th>
+                    </tr>
+                 </thead>
+                 <tbody class="cases2">
+                    <tr *ngFor="let state of countrywise.covid19Stats">
+                         <td style="text-align: center;">{{state.country|json}}</td>
+                         <td style="text-align: center;">{{state.province|titlecase}}</td>
+                         <td style="text-align: center;">{{state.confirmed|json}}</td>
+                         <td style="text-align: center;">{{state.deaths|json}}</td>
+                         <td style="text-align: center;">{{state.recovered|json}}</td>
+                         <td style="text-align: center;">{{state.city|titlecase}}</td>
+                         <td style="text-align: center;">{{state.lastUpdate|json}}</td>
+                    </tr>
+                     </tbody>
+               </table>
+               </div>
+        </div>
+        
+            
+    </body>

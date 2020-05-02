@@ -1,0 +1,40 @@
+.heading {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: xx-large;
+    margin-top: -15%;
+    text-align: center;
+    font-weight: bolder;
+}
+.cases {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: x-large;
+    margin-top: 2%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.cases1 {
+    color : brown;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+input {
+    border-width: thick;
+    width: 400px;
+    border: white;
+    text-align: center;
+    background-color: white;
+    margin-left: 15%;
+}
+.carder {
+    max-width: 580px;
+    margin-left: 30%;
+    background-color: black;
+    margin-top: 0%;
+}
+.spin {
+    margin-left:45%;
+    margin-top: 20%;
+}

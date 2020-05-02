@@ -1,0 +1,20 @@
+<body>
+<!-- <div *ngIf="results"> -->
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+        </head>
+    <div class="spin">
+        <mat-spinner *ngIf="showspinner"></mat-spinner>
+    </div>
+    <div *ngIf="dataview">
+        <h1 class="heading col-lg-12">Covid-19 Cases</h1>
+    <mat-card class="carder col-sm-12">
+    <h3 class="cases col-sm-12">Recovered :</h3><input type="text" id="exampleForm2" value="{{results?.recovered}}" class="form-control cases1 col-md-12">
+    <h3 class="cases col-sm-12" >Deaths :</h3><input type="text" id="exampleForm2" value="{{results?.deaths}}" class="form-control cases1 col-md-12">
+    <h3 class="cases col-sm-12">Confirmed :</h3><input type="text" id="exampleForm2" value="{{results?.confirmed}}" class="form-control cases1 col-md-12">
+    <h3 class="cases col-sm-12">LastChecked :</h3><input type="text" id="exampleForm2" value="{{results?.lastChecked}}" class="form-control cases1 col-md-12">
+    <h3 class="cases col-sm-12">LastReported :</h3><input type="text" id="exampleForm2" value="{{results?.lastReported}}" class="form-control cases1 col-md-12">
+    <h3 class="cases col-sm-12">Location :</h3><input type="text" id="exampleForm2" value="{{results?.location}}" class="form-control cases1 col-md-12">
+        </mat-card>
+</div>
+</body>
